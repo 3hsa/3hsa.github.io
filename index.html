@@ -53,122 +53,6 @@
   
     <article id="post-来玩个游戏吧" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
-  <div class="article-meta">
-    <a href="/2019/03/15/来玩个游戏吧/" class="article-date">
-  <time datetime="2019-03-15T14:10:06.955Z" itemprop="datePublished">2019-03-15</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-doorframe" itemprop="articleBody">
-      
-        <!DOCTYPE html>
-<html>
-
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>来玩个游戏吧</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css">
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__html"><h1><a id="_2"></a>前言</h1>
-<p>长时间没学习了，刚刚搭建好博客，先随便写一篇记录一下。</p>
-<h1><a id="misc_6"></a>一道misc</h1>
-<p>来源：安恒杯2月线上赛<br>
-<a href="https://xpro-adl.91ctf.com/userdownload?filename=5c6cb1d295e9b.zip&amp;type=attach&amp;feature=custom" target="_blank" rel="noopener">下载附件</a></p>
-<blockquote>
-<p>题目说明：<br>
-学信息安全的朋友给你发来一封邮件，是一个小程序，有两个关卡，只要你通过这两个关卡，就会收到一封邮件。<br>
-但是这封邮件对于一般人的话会当做垃圾邮件处理，但是你知道，朋友所要描述的信息就在这封垃圾邮件当中。<br>
-邮件内容是普通的信息，但是你知道绝密消息（flag）就隐藏在其中，需要一个在线的网站去解密，而这个网站使用了栅格密码。</p>
-</blockquote>
-<p>还在等什么，开始通关吧！<br>
-<img src="https://img-blog.csdnimg.cn/20190313210317377.PNG" alt="第一关"><br>
-第一关就遇见没见过的密文，提示貌似在公交站经常见到，说明也是用来让人看和识别的，想到盲文，解密，再md5解密，提交提示恭喜通过第一关！<br>
-<img src="https://img-blog.csdnimg.cn/20190313211825456.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70" alt="第二关"><br>
-这一关要用到fastcoll（快速md5 碰撞生成器），<a href="https://blog.csdn.net/sysprogram/article/details/73753354" target="_blank" rel="noopener">参考博客</a>可以下载两个文件，md5值相同，下载后输入本地文件所在路径，提交，在邮件接收区显示出一封邮件，邮件内容如下：</p>
-<pre><code class="prism language-javascript">送你一封包含flag的邮件：
-Dear Professional <span class="token punctuation">;</span> Especially <span class="token keyword">for</span> you <span class="token operator">-</span> <span class="token keyword">this</span> cutting<span class="token operator">-</span>edge 
-intelligence <span class="token operator">!</span> If you no longer wish to receive our 
-publications simply reply <span class="token keyword">with</span> a Subject<span class="token punctuation">:</span> <span class="token keyword">of</span> <span class="token string">"REMOVE"</span> 
-and you will immediately be removed <span class="token keyword">from</span> our club <span class="token punctuation">.</span> 
-This mail is being sent <span class="token keyword">in</span> compliance <span class="token keyword">with</span> Senate bill 
-<span class="token number">2216</span> <span class="token punctuation">,</span> Title <span class="token number">9</span> <span class="token punctuation">;</span> Section <span class="token number">306</span> <span class="token operator">!</span> <span class="token constant">THIS</span> <span class="token constant">IS</span> <span class="token constant">NOT</span> <span class="token constant">MULTI</span><span class="token operator">-</span><span class="token constant">LEVEL</span> 
-<span class="token constant">MARKETING</span> <span class="token punctuation">.</span> Why work <span class="token keyword">for</span> somebody <span class="token keyword">else</span> when you can 
-become rich <span class="token keyword">as</span> few <span class="token keyword">as</span> <span class="token number">35</span> weeks <span class="token punctuation">.</span> Have you ever noticed 
-more people than ever are surfing the web and people 
-will <span class="token keyword">do</span> almost anything to avoid mailing their bills 
-<span class="token punctuation">.</span> Well<span class="token punctuation">,</span> now is your chance to capitalize on <span class="token keyword">this</span> <span class="token operator">!</span> 
-<span class="token constant">WE</span> will help <span class="token constant">YOU</span> decrease perceived waiting time by 
-<span class="token number">120</span><span class="token operator">%</span> <span class="token operator">&amp;</span> decrease perceived waiting time by <span class="token number">140</span><span class="token operator">%</span> <span class="token punctuation">.</span> You 
-can begin at absolutely no cost to you <span class="token punctuation">.</span> But don't 
-believe us <span class="token operator">!</span> Mrs Jones <span class="token keyword">of</span> Minnesota tried us and says 
-<span class="token string">"I was skeptical but it worked for me"</span> <span class="token punctuation">.</span> We assure 
-you that we operate within all applicable laws <span class="token punctuation">.</span> Because 
-the Internet operates on <span class="token string">"Internet time"</span> you must act 
-now <span class="token operator">!</span> Sign up a friend and your friend will be rich 
-too <span class="token punctuation">.</span> Warmest regards <span class="token punctuation">.</span> Dear Cybercitizen <span class="token punctuation">,</span> We know 
-you are interested <span class="token keyword">in</span> receiving red<span class="token operator">-</span>hot announcement 
-<span class="token operator">!</span> We will comply <span class="token keyword">with</span> all removal requests <span class="token operator">!</span> This mail 
-is being sent <span class="token keyword">in</span> compliance <span class="token keyword">with</span> Senate bill <span class="token number">1619</span> <span class="token punctuation">;</span> 
-Title <span class="token number">2</span> <span class="token punctuation">;</span> Section <span class="token number">301</span> <span class="token punctuation">.</span> This is <span class="token constant">NOT</span> unsolicited bulk 
-mail <span class="token operator">!</span> Why work <span class="token keyword">for</span> somebody <span class="token keyword">else</span> when you can become 
-rich within <span class="token number">53</span> <span class="token constant">MONTHS</span> <span class="token operator">!</span> Have you ever noticed more 
-people than ever are surfing the web and more people 
-than ever are surfing the web <span class="token punctuation">.</span> Well<span class="token punctuation">,</span> now is your chance 
-to capitalize on <span class="token keyword">this</span> <span class="token punctuation">.</span> We will help you use credit 
-cards on your website plus decrease perceived waiting 
-time by <span class="token number">150</span><span class="token operator">%</span> <span class="token punctuation">.</span> The best thing about our system is that 
-it is absolutely risk free <span class="token keyword">for</span> you <span class="token operator">!</span> But don't believe 
-us <span class="token operator">!</span> Mrs Simpson <span class="token keyword">of</span> Washington tried us and says "Now 
-<span class="token constant">I</span>'m rich<span class="token punctuation">,</span> Rich<span class="token punctuation">,</span> <span class="token constant">RICH</span>" <span class="token punctuation">.</span> We assure you that we operate 
-within all applicable laws <span class="token operator">!</span> We beseech you <span class="token operator">-</span> act now 
-<span class="token operator">!</span> Sign up a friend and your friend will be rich too 
-<span class="token punctuation">.</span> Thank<span class="token operator">-</span>you <span class="token keyword">for</span> your serious consideration <span class="token keyword">of</span> our offer 
-<span class="token operator">!</span> Dear Friend <span class="token punctuation">;</span> This letter was specially selected 
-to be sent to you <span class="token operator">!</span> If you no longer wish to receive 
-our publications simply reply <span class="token keyword">with</span> a Subject<span class="token punctuation">:</span> <span class="token keyword">of</span> <span class="token string">"REMOVE"</span> 
-and you will immediately be removed <span class="token keyword">from</span> our mailing 
-list <span class="token punctuation">.</span> This mail is being sent <span class="token keyword">in</span> compliance <span class="token keyword">with</span> Senate 
-bill <span class="token number">2716</span> <span class="token punctuation">,</span> Title <span class="token number">2</span> <span class="token punctuation">;</span> Section <span class="token number">306</span> <span class="token operator">!</span> This is a ligitimate 
-business proposal <span class="token punctuation">.</span> Why work <span class="token keyword">for</span> somebody <span class="token keyword">else</span> when 
-you can become rich inside <span class="token number">33</span> weeks <span class="token punctuation">.</span> Have you ever 
-noticed more people than ever are surfing the web plus 
-more people than ever are surfing the web <span class="token punctuation">.</span> Well<span class="token punctuation">,</span> now 
-is your chance to capitalize on <span class="token keyword">this</span> <span class="token operator">!</span> <span class="token constant">WE</span> will help 
-<span class="token constant">YOU</span> <span class="token constant">SELL</span> <span class="token constant">MORE</span> and process your orders within seconds 
-<span class="token punctuation">.</span> You can begin at absolutely no cost to you <span class="token punctuation">.</span> But 
-don't believe us <span class="token operator">!</span> Mrs Jones <span class="token keyword">of</span> Kentucky tried us and 
-says <span class="token string">"I was skeptical but it worked for me"</span> <span class="token operator">!</span> This 
-offer is <span class="token number">100</span><span class="token operator">%</span> legal <span class="token operator">!</span> We implore you <span class="token operator">-</span> act now <span class="token punctuation">.</span> Sign 
-up a friend and you'll <span class="token keyword">get</span> a discount <span class="token keyword">of</span> <span class="token number">50</span><span class="token operator">%</span> <span class="token punctuation">.</span> God 
-Bless <span class="token punctuation">.</span> 
-
-</code></pre>
-<p>题目信息也说了，需要栅格密码、在线解密，搜索栅格密码，在<a href="https://book.2cto.com/201407/45251.html" target="_blank" rel="noopener">参考链接</a>此发现一个在线解密网站<a href="http://www.spammimic.com/decode.cgi" target="_blank" rel="noopener">Spam Mimic</a>，解密后得flag<br>
-<img src="https://img-blog.csdnimg.cn/20190315172035896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-</div>
-</body>
-
-</html>
-
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-来玩个游戏吧" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
     <header class="article-header">
       
   
@@ -253,10 +137,6 @@ Bless <span class="token punctuation">.</span>
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2019/03/15/来玩个游戏吧/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2019/03/15/来玩个游戏吧/">来玩个游戏吧</a>
